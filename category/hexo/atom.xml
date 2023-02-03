@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://suyu250.github.io</id>
+    <title>帅哥 • Posts by &#34;hexo&#34; category</title>
+    <link href="https://suyu250.github.io" />
+    <updated>2023-02-03T13:29:58.000Z</updated>
+    <category term="我的博客" />
+    <category term="日记" />
+    <category term="hexo的基本使用" />
+    <category term="hexo中的Markdown语法" />
+    <category term="hexo入门指南" />
+    <category term="线报" />
+    <entry>
+        <id>https://suyu250.github.io/2023/02/03/Hexo-%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97%EF%BC%88%E5%9B%9B%EF%BC%89-%E9%A1%B5%E9%9D%A2%E3%80%81%E5%AF%BC%E8%88%AA%E3%80%81%E8%BE%B9%E6%A0%8F%E3%80%81%E5%BA%95%E6%A0%8F/</id>
+        <title>Hexo 入门指南（四） - 页面、导航、边栏、底栏</title>
+        <link rel="alternate" href="https://suyu250.github.io/2023/02/03/Hexo-%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97%EF%BC%88%E5%9B%9B%EF%BC%89-%E9%A1%B5%E9%9D%A2%E3%80%81%E5%AF%BC%E8%88%AA%E3%80%81%E8%BE%B9%E6%A0%8F%E3%80%81%E5%BA%95%E6%A0%8F/"/>
+        <content type="html">&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;这个是 hexo 的入门指南，一般用 hexo 快速生成的博客，只有一个主页，其他的都需要自己配置&lt;/p&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;传送链接: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dpemFyZGZvcmNlbC9hcnRpY2xlL2RldGFpbHMvNDA2ODQ5NTM=&#34;&gt;https://blog.csdn.net/wizardforcel/article/details/40684953&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="hexo入门指南" />
+        <updated>2023-02-03T13:29:58.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://suyu250.github.io/2023/02/03/hexo%E4%B8%AD%E7%9A%84Markdown%E8%AF%AD%E6%B3%95/</id>
+        <title>hexo中的Markdown语法</title>
+        <link rel="alternate" href="https://suyu250.github.io/2023/02/03/hexo%E4%B8%AD%E7%9A%84Markdown%E8%AF%AD%E6%B3%95/"/>
+        <content type="html">&lt;h1 id=&#34;友情提示&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#友情提示&#34;&gt;#&lt;/a&gt; 友情提示&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;hexo 渲染 markdown 文章时，不会渲染其中的 html 标签，所以不要在 hexo 写 md 文章时使用 html 标签。&lt;/li&gt;
+&lt;li&gt;hexo 中的 markdown 语法与 csdn 中的 markdown 语法是有区别的，下面介绍的是 hexo 的 markdown 语法。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;== 传送链接 == :&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L05PVF9UT0RBWTEvYXJ0aWNsZS9kZXRhaWxzLzEyMjc5MDIwMg==&#34;&gt;https://blog.csdn.net/NOT_TODAY1/article/details/122790202&lt;/span&gt;&lt;/p&gt;
+</content>
+        <category term="hexo中的Markdown语法" />
+        <updated>2023-02-03T13:19:04.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://suyu250.github.io/2023/02/01/hello-world/</id>
+        <title>Hello World</title>
+        <link rel="alternate" href="https://suyu250.github.io/2023/02/01/hello-world/"/>
+        <content type="html">&lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
+&lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo new &lt;span class=&#34;token string&#34;&gt;&#34;My New Post&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s&#34;&gt;Writing&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;run-server&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#run-server&#34;&gt;#&lt;/a&gt; Run server&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo server&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=&#34;&gt;Server&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;generate-static-files&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#generate-static-files&#34;&gt;#&lt;/a&gt; Generate static files&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo generate&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s&#34;&gt;Generating&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
+</content>
+        <category term="hexo的基本使用" />
+        <updated>2023-02-01T03:55:37.768Z</updated>
+    </entry>
+</feed>
