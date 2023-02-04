@@ -4,11 +4,13 @@
     <title>帅哥 • Posts by &#34;我的博客&#34; tag</title>
     <link href="https://suyu250.github.io" />
     <updated>2023-02-03T11:57:43.000Z</updated>
-    <category term="我的博客" />
     <category term="日记" />
+    <category term="hexo入门指南" />
+    <category term="我的博客" />
     <category term="hexo的基本使用" />
     <category term="hexo中的Markdown语法" />
-    <category term="hexo入门指南" />
+    <category term="IT" />
+    <category term="life" />
     <category term="线报" />
     <entry>
         <id>https://suyu250.github.io/2023/02/03/%E5%85%B3%E4%BA%8E%E6%9C%AC%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/</id>
@@ -49,6 +51,9 @@
 &lt;p&gt;themes 文件夹：其中 landscape 是默认的主题，其他文件夹是克隆下来时的主题 (本博客使用的主题是 shoka)。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;h2 id=&#34;hexo的优势&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hexo的优势&#34;&gt;#&lt;/a&gt; hexo 的优势&lt;/h2&gt;
+&lt;p&gt;hexo 是&lt;ins&gt;静态博客生成器&lt;/ins&gt; (SSG), 这意味着它不需要服务端来进行渲染，只需要将文件发送给客户端即可&lt;br /&gt;
+因此，hexo 脱离了服务器的限制，可以在 github pages 等静态页面托管平台上部署 hexo 基于 NODEJS, 具有较强的扩展性，性能也相对较高&lt;/p&gt;
 &lt;h2 id=&#34;依赖的插件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#依赖的插件&#34;&gt;#&lt;/a&gt; 依赖的插件&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;

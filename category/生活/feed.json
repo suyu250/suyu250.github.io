@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "帅哥 • All posts by \"生活\" category",
+    "description": "初入前端的菜鸟一枚",
+    "home_page_url": "https://suyu250.github.io",
+    "items": [
+        {
+            "id": "https://suyu250.github.io/2023/02/04/%E4%BB%80%E4%B9%88%E6%89%8D%E5%8F%AB%E7%94%9F%E6%B4%BB%EF%BC%9F/",
+            "url": "https://suyu250.github.io/2023/02/04/%E4%BB%80%E4%B9%88%E6%89%8D%E5%8F%AB%E7%94%9F%E6%B4%BB%EF%BC%9F/",
+            "title": "什么才叫生活？",
+            "date_published": "2023-02-04T07:15:53.000Z",
+            "content_html": "<h1 id=\"什么叫生活\"><a class=\"anchor\" href=\"#什么叫生活\">#</a> 什么叫生活</h1>\n<p>有人说是为生存而活着，有人说是生活是酸甜苦辣都经历，我却依旧笑春风。也有人说生活是喜怒哀乐的修行，有喜有乐快乐前行。更有人说生活是有失有得。</p>\n<p>不过我想说的是，这些都不是，而且是:</p>\n<ul class=\"task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"cbx_0\" disabled=\"true\" /><label for=\"cbx_0\"> 大错</label></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"cbx_1\" disabled=\"true\" /><label for=\"cbx_1\"> 特错</label></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"cbx_2\" disabled=\"true\" /><label for=\"cbx_2\"> 错的离谱</label></li>\n</ul>\n<h1 id=\"这才是生活\"><a class=\"anchor\" href=\"#这才是生活\">#</a> 这才是生活 😏</h1>\n<p>哈哈哈！别忘了一键三连哦！<br />\n<div class=\"media-container\"><div class=\"player\" data-type=\"video\" data-src='[{\"name\":\"短发天花板\",\"url\":\"https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/4165/1.1647508957864.mp4(Av979769104,P1).mp4\"},{\"name\":\"这就是T0 级别的美女吗\",\"url\":\"https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/4165/1.%E8%BF%99%E5%B0%B1%E6%98%AFT0%E7%BA%A7%E7%BE%8E%E5%A5%B3%E5%90%97%EF%BC%9F(Av930615934,P1).mp4\"}]'></div></div></p>\n",
+            "tags": [
+                "life"
+            ]
+        }
+    ]
+}

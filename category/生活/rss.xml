@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>帅哥 • Posts by &#34;生活&#34; category</title>
+        <link>https://suyu250.github.io</link>
+        <description>初入前端的菜鸟一枚</description>
+        <language>zh-CN</language>
+        <pubDate>Sat, 04 Feb 2023 15:15:53 +0800</pubDate>
+        <lastBuildDate>Sat, 04 Feb 2023 15:15:53 +0800</lastBuildDate>
+        <category>日记</category>
+        <category>hexo入门指南</category>
+        <category>我的博客</category>
+        <category>hexo的基本使用</category>
+        <category>hexo中的Markdown语法</category>
+        <category>IT</category>
+        <category>life</category>
+        <category>线报</category>
+        <item>
+            <guid isPermalink="true">https://suyu250.github.io/2023/02/04/%E4%BB%80%E4%B9%88%E6%89%8D%E5%8F%AB%E7%94%9F%E6%B4%BB%EF%BC%9F/</guid>
+            <title>什么才叫生活？</title>
+            <link>https://suyu250.github.io/2023/02/04/%E4%BB%80%E4%B9%88%E6%89%8D%E5%8F%AB%E7%94%9F%E6%B4%BB%EF%BC%9F/</link>
+            <category>life</category>
+            <pubDate>Sat, 04 Feb 2023 15:15:53 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;什么叫生活&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么叫生活&#34;&gt;#&lt;/a&gt; 什么叫生活&lt;/h1&gt;
+&lt;p&gt;有人说是为生存而活着，有人说是生活是酸甜苦辣都经历，我却依旧笑春风。也有人说生活是喜怒哀乐的修行，有喜有乐快乐前行。更有人说生活是有失有得。&lt;/p&gt;
+&lt;p&gt;不过我想说的是，这些都不是，而且是:&lt;/p&gt;
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_0&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_0&#34;&gt; 大错&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_1&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_1&#34;&gt; 特错&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_2&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_2&#34;&gt; 错的离谱&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;这才是生活&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#这才是生活&#34;&gt;#&lt;/a&gt; 这才是生活 😏&lt;/h1&gt;
+&lt;p&gt;哈哈哈！别忘了一键三连哦！&lt;br /&gt;
+&lt;div class=&#34;media-container&#34;&gt;&lt;div class=&#34;player&#34; data-type=&#34;video&#34; data-src=&#39;[{&#34;name&#34;:&#34;短发天花板&#34;,&#34;url&#34;:&#34;https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/4165/1.1647508957864.mp4(Av979769104,P1).mp4&#34;},{&#34;name&#34;:&#34;这就是T0 级别的美女吗&#34;,&#34;url&#34;:&#34;https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/4165/1.%E8%BF%99%E5%B0%B1%E6%98%AFT0%E7%BA%A7%E7%BE%8E%E5%A5%B3%E5%90%97%EF%BC%9F(Av930615934,P1).mp4&#34;}]&#39;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

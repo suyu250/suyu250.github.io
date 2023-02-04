@@ -3,13 +3,49 @@
     <id>https://suyu250.github.io</id>
     <title>帅哥</title>
     <link href="https://suyu250.github.io" />
-    <updated>2023-02-03T14:08:36.000Z</updated>
-    <category term="我的博客" />
+    <updated>2023-02-04T07:15:53.000Z</updated>
     <category term="日记" />
+    <category term="hexo入门指南" />
+    <category term="我的博客" />
     <category term="hexo的基本使用" />
     <category term="hexo中的Markdown语法" />
-    <category term="hexo入门指南" />
+    <category term="IT" />
+    <category term="life" />
     <category term="线报" />
+    <entry>
+        <id>https://suyu250.github.io/2023/02/04/%E4%BB%80%E4%B9%88%E6%89%8D%E5%8F%AB%E7%94%9F%E6%B4%BB%EF%BC%9F/</id>
+        <title>什么才叫生活？</title>
+        <link rel="alternate" href="https://suyu250.github.io/2023/02/04/%E4%BB%80%E4%B9%88%E6%89%8D%E5%8F%AB%E7%94%9F%E6%B4%BB%EF%BC%9F/"/>
+        <content type="html">&lt;h1 id=&#34;什么叫生活&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么叫生活&#34;&gt;#&lt;/a&gt; 什么叫生活&lt;/h1&gt;
+&lt;p&gt;有人说是为生存而活着，有人说是生活是酸甜苦辣都经历，我却依旧笑春风。也有人说生活是喜怒哀乐的修行，有喜有乐快乐前行。更有人说生活是有失有得。&lt;/p&gt;
+&lt;p&gt;不过我想说的是，这些都不是，而且是:&lt;/p&gt;
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_0&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_0&#34;&gt; 大错&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_1&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_1&#34;&gt; 特错&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_2&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_2&#34;&gt; 错的离谱&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;这才是生活&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#这才是生活&#34;&gt;#&lt;/a&gt; 这才是生活 😏&lt;/h1&gt;
+&lt;p&gt;哈哈哈！别忘了一键三连哦！&lt;br /&gt;
+&lt;div class=&#34;media-container&#34;&gt;&lt;div class=&#34;player&#34; data-type=&#34;video&#34; data-src=&#39;[{&#34;name&#34;:&#34;短发天花板&#34;,&#34;url&#34;:&#34;https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/4165/1.1647508957864.mp4(Av979769104,P1).mp4&#34;},{&#34;name&#34;:&#34;这就是T0 级别的美女吗&#34;,&#34;url&#34;:&#34;https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/4165/1.%E8%BF%99%E5%B0%B1%E6%98%AFT0%E7%BA%A7%E7%BE%8E%E5%A5%B3%E5%90%97%EF%BC%9F(Av930615934,P1).mp4&#34;}]&#39;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
+</content>
+        <category term="life" />
+        <updated>2023-02-04T07:15:53.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://suyu250.github.io/2023/02/04/hsah%E3%80%81MD5%E5%9C%A8%E7%BA%BF%E8%BD%AC%E6%8D%A2%E5%B7%A5%E5%85%B7/</id>
+        <title>hsah、MD5在线转换工具</title>
+        <link rel="alternate" href="https://suyu250.github.io/2023/02/04/hsah%E3%80%81MD5%E5%9C%A8%E7%BA%BF%E8%BD%AC%E6%8D%A2%E5%B7%A5%E5%85%B7/"/>
+        <content type="html">&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;人生总是那么平淡无常，但是有哥出手，日子必须有盼头啊！&lt;/p&gt;
+&lt;/div&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token class-name&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;out&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;println &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;一键三连！&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;hash、MD5 等等在线转换:&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3Rvb2xzLmpiNTEubmV0L3Bhc3N3b3JkL2hhc2hfZW5jcnlwdC8=&#34;&gt;http://tools.jb51.net/password/hash_encrypt/&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果已失效，请联系站长更换&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="IT" />
+        <updated>2023-02-04T07:08:48.000Z</updated>
+    </entry>
     <entry>
         <id>https://suyu250.github.io/2023/02/03/%E6%95%99%E4%BD%A0%E4%B8%80%E6%8B%9B%EF%BC%8C%E5%BE%AE%E4%BF%A1%E7%BA%A2%E5%8C%85%E5%B0%81%E9%9D%A2%E4%B8%8D%E7%94%A8%E6%84%81/</id>
         <title>教你一招，微信红包封面不用愁</title>
@@ -93,6 +129,9 @@
 &lt;p&gt;themes 文件夹：其中 landscape 是默认的主题，其他文件夹是克隆下来时的主题 (本博客使用的主题是 shoka)。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;h2 id=&#34;hexo的优势&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hexo的优势&#34;&gt;#&lt;/a&gt; hexo 的优势&lt;/h2&gt;
+&lt;p&gt;hexo 是&lt;ins&gt;静态博客生成器&lt;/ins&gt; (SSG), 这意味着它不需要服务端来进行渲染，只需要将文件发送给客户端即可&lt;br /&gt;
+因此，hexo 脱离了服务器的限制，可以在 github pages 等静态页面托管平台上部署 hexo 基于 NODEJS, 具有较强的扩展性，性能也相对较高&lt;/p&gt;
 &lt;h2 id=&#34;依赖的插件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#依赖的插件&#34;&gt;#&lt;/a&gt; 依赖的插件&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
