@@ -1,0 +1,42 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "帅哥 • All posts by \"音乐\" tag",
+    "description": "初入前端的菜鸟一枚",
+    "home_page_url": "https://suyu250.github.io",
+    "items": [
+        {
+            "id": "https://suyu250.github.io/2023/02/07/%E7%9D%A1%E4%B8%8D%E7%9D%80%EF%BC%9F%E6%9D%A5%E5%90%AC%E5%90%AC%E8%BF%99%E4%BA%9B%E5%AE%89%E9%9D%99%E7%9A%84%E6%AD%8C%E6%9B%B2%E5%90%A7%EF%BC%81/",
+            "url": "https://suyu250.github.io/2023/02/07/%E7%9D%A1%E4%B8%8D%E7%9D%80%EF%BC%9F%E6%9D%A5%E5%90%AC%E5%90%AC%E8%BF%99%E4%BA%9B%E5%AE%89%E9%9D%99%E7%9A%84%E6%AD%8C%E6%9B%B2%E5%90%A7%EF%BC%81/",
+            "title": "睡不着？来听听这些安静的歌曲吧！",
+            "date_published": "2023-02-07T11:12:24.000Z",
+            "content_html": "<h1 id=\"好音乐不私藏\"><a class=\"anchor\" href=\"#好音乐不私藏\">#</a> 好音乐不私藏</h1>\n<p>欢迎光临博客，走进音乐心情风筝，冲出你落寞的窗口，拍去身上的迷茫，卸下烦琐的心情，给漂泊的心一个停泊的港湾。--- 你永远的家。我是个在很多场合下喜欢把自己称为孩子，拒绝长大的孩子。在永恒的羽翼的签名档中的那句话，只有快活的，天真的，没心没肺的孩子才能飞。我是多么地喜欢这句话。现在的我处身于世界的另一个角落，在另一段时间中生活，我习惯了在天亮的时候跟很多人道再见，说晚安。现在你那里天黑了么，还是天快要亮了呢。<br />\n<mark>请永远不要忘了那个等你回家的人</mark><br />\n <div class=\"media-container\"><div class=\"player\" data-type=\"audio\" data-src='[{\"title\":\"晚安催眠曲\",\"list\":[\"https://music.163.com/#/my/m/music/playlist?id=8147144789\"]}]'></div></div></p>\n",
+            "tags": [
+                "音乐",
+                "安静的歌曲",
+                "催眠"
+            ]
+        },
+        {
+            "id": "https://suyu250.github.io/2023/02/07/%E5%86%8D%E7%8E%B0%E7%BB%8F%E5%85%B8-%E3%80%90%E5%8D%8E%E6%99%A8%E5%AE%87%E3%80%91%E3%80%8A-%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B%E3%80%8B%E5%A4%A9%E7%B1%81%E8%B6%85%E6%B8%85%E7%89%88/",
+            "url": "https://suyu250.github.io/2023/02/07/%E5%86%8D%E7%8E%B0%E7%BB%8F%E5%85%B8-%E3%80%90%E5%8D%8E%E6%99%A8%E5%AE%87%E3%80%91%E3%80%8A-%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B%E3%80%8B%E5%A4%A9%E7%B1%81%E8%B6%85%E6%B8%85%E7%89%88/",
+            "title": "再现经典！【华晨宇】《 我的滑板鞋》天籁超清版",
+            "date_published": "2023-02-07T10:41:39.000Z",
+            "content_html": "<h1 id=\"好音乐要分享\"><a class=\"anchor\" href=\"#好音乐要分享\">#</a> 好音乐要分享</h1>\n<p><div class=\"media-container\"><div class=\"player\" data-type=\"video\" data-src='[{\"name\":\"【华晨宇】《 我的滑板鞋》天籁超清版\",\"url\":\"https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/4165/1.%E5%8D%8E%E6%99%A8%E5%AE%87%20%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B(Av48472059,P1).mp4\"}]'></div></div></p>\n",
+            "tags": [
+                "音乐",
+                "经典音乐"
+            ]
+        },
+        {
+            "id": "https://suyu250.github.io/2023/02/07/%E9%97%AF%E8%8D%A1%E6%B1%9F%E6%B9%96%EF%BC%8C%E5%93%AA%E6%9C%89%E5%9B%9E%E5%A4%B4%E8%B7%AF-%E3%80%8A%E4%BE%A0%E5%AE%A2%E8%A1%8C%E3%80%8B%E6%B0%B4%E7%A6%B9/",
+            "url": "https://suyu250.github.io/2023/02/07/%E9%97%AF%E8%8D%A1%E6%B1%9F%E6%B9%96%EF%BC%8C%E5%93%AA%E6%9C%89%E5%9B%9E%E5%A4%B4%E8%B7%AF-%E3%80%8A%E4%BE%A0%E5%AE%A2%E8%A1%8C%E3%80%8B%E6%B0%B4%E7%A6%B9/",
+            "title": "【图一乐原创音乐大赛】国风说唱 闯荡江湖，哪有回头路|《侠客行》水禹",
+            "date_published": "2023-02-07T10:17:12.000Z",
+            "content_html": "<h1 id=\"好音乐要分享\"><a class=\"anchor\" href=\"#好音乐要分享\">#</a> 好音乐要分享</h1>\n<ul>\n<li>《侠客行》</li>\n<li>制作人：水禹 / 贵州放克王</li>\n<li>制作监制：魔笛</li>\n<li>戏曲：韩敏洁</li>\n<li>作词：贵州放克王</li>\n<li>作曲：魔笛 / 贵州放克王 / 水禹</li>\n<li>和声：水禹 / 贵州放克王</li>\n<li>和声编写：水禹</li>\n<li>男声 / 说唱：水禹</li>\n<li>女声 / 说唱：夹子</li>\n<li>编曲：临冬</li>\n<li>混音：龙累男孩</li>\n<li>笛子：囚牛老师</li>\n<li>视频制作：水禹</li>\n</ul>\n<p><div class=\"media-container\"><div class=\"player\" data-type=\"video\" data-src='[{\"name\":\"国风说唱“闯荡江湖，哪有回头路”|《侠客行》水禹\",\"url\":\"https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/4165/1.%E3%80%90%E5%9B%BE%E4%B8%80%E4%B9%90%E5%8E%9F%E5%88%9B%E9%9F%B3%E4%B9%90%E5%A4%A7%E8%B5%9B%E3%80%91%E5%9B%BD%E9%A3%8E%E8%AF%B4%E5%94%B1%E2%80%9C%E9%97%AF%E8%8D%A1%E6%B1%9F%E6%B9%96%EF%BC%8C%E5%93%AA%E6%9C%89%E5%9B%9E%E5%A4%B4%E8%B7%AF%E2%80%9D_%E3%80%8A%E4%BE%A0%E5%AE%A2%E8%A1%8C%E3%80%8B%E6%B0%B4%E7%A6%B9(Av608660237,P1).mp4\"}]'></div></div></p>\n",
+            "tags": [
+                "音乐",
+                "原创音乐"
+            ]
+        }
+    ]
+}

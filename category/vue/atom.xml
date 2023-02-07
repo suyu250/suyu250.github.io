@@ -1,0 +1,1001 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://suyu250.github.io</id>
+    <title>帅哥 • Posts by &#34;vue&#34; category</title>
+    <link href="https://suyu250.github.io" />
+    <updated>2023-02-07T11:48:30.000Z</updated>
+    <category term="hexo入门指南" />
+    <category term="日记" />
+    <category term="hexo中的Markdown语法" />
+    <category term="我的博客" />
+    <category term="IT" />
+    <category term="hexo的基本使用" />
+    <category term="multi-markdown-it" />
+    <category term="life" />
+    <category term="线报" />
+    <category term="本主题中的Markdown语法" />
+    <category term="音乐" />
+    <category term="原创音乐" />
+    <category term="编程" />
+    <category term="vue" />
+    <category term="教程" />
+    <category term="vue2" />
+    <category term="笔记" />
+    <category term="经典音乐" />
+    <category term="安静的歌曲" />
+    <category term="催眠" />
+    <category term="element-ui" />
+    <entry>
+        <id>https://suyu250.github.io/2023/02/07/vue%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/</id>
+        <title>vue快速上手</title>
+        <link rel="alternate" href="https://suyu250.github.io/2023/02/07/vue%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/"/>
+        <content type="html">&lt;h1 id=&#34;vue3快速上手&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vue3快速上手&#34;&gt;#&lt;/a&gt; Vue3 快速上手&lt;/h1&gt;
+&lt;p&gt;&amp;lt;img src=&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly91c2VyLWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vNDk5NTUwLzkzNjI0NDI4LTUzOTMyNzgwLWY5YWUtMTFlYS04ZDE2LWFmOTQ5ZTE2YTA5Zi5wbmc=&#34;&gt;https://user-images.githubusercontent.com/499550/93624428-53932780-f9ae-11ea-8d16-af949e16a09f.png&lt;/span&gt;&amp;quot; style=&amp;quot;width:200px&amp;quot; /&amp;gt;&lt;/p&gt;
+&lt;h2 id=&#34;1vue3简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1vue3简介&#34;&gt;#&lt;/a&gt; 1.Vue3 简介&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;2020 年 9 月 18 日，Vue.js 发布 3.0 版本，代号：One Piece（海贼王）&lt;/li&gt;
+&lt;li&gt;耗时 2 年多、&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3Z1ZWpzL3Z1ZS1uZXh0L2dyYXBocy9jb21taXQtYWN0aXZpdHk=&#34;&gt;2600 + 次提交&lt;/span&gt;、&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3Z1ZWpzL3JmY3MvdHJlZS9tYXN0ZXIvYWN0aXZlLXJmY3M=&#34;&gt;30 + 个 RFC&lt;/span&gt;、&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3Z1ZWpzL3Z1ZS1uZXh0L3B1bGxzP3E9aXMlM0FwcitpcyUzQW1lcmdlZCstYXV0aG9yJTNBYXBwJTJGZGVwZW5kYWJvdC1wcmV2aWV3Kw==&#34;&gt;600 + 次 PR&lt;/span&gt;、&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3Z1ZWpzL3Z1ZS1uZXh0L2dyYXBocy9jb250cmlidXRvcnM=&#34;&gt;99 位贡献者&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;github 上的 tags 地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3Z1ZWpzL3Z1ZS1uZXh0L3JlbGVhc2VzL3RhZy92My4wLjA=&#34;&gt;https://github.com/vuejs/vue-next/releases/tag/v3.0.0&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2vue3带来了什么&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2vue3带来了什么&#34;&gt;#&lt;/a&gt; 2.Vue3 带来了什么&lt;/h2&gt;
+&lt;h3 id=&#34;1性能的提升&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1性能的提升&#34;&gt;#&lt;/a&gt; 1. 性能的提升&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;打包大小减少 41%&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;初次渲染快 55%, 更新渲染快 133%&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;内存减少 54%&lt;/p&gt;
+&lt;p&gt;......&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2源码的升级&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2源码的升级&#34;&gt;#&lt;/a&gt; 2. 源码的升级&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;使用 Proxy 代替 defineProperty 实现响应式&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重写虚拟 DOM 的实现和 Tree-Shaking&lt;/p&gt;
+&lt;p&gt;......&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3拥抱typescript&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3拥抱typescript&#34;&gt;#&lt;/a&gt; 3. 拥抱 TypeScript&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Vue3 可以更好的支持 TypeScript&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4新的特性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4新的特性&#34;&gt;#&lt;/a&gt; 4. 新的特性&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Composition API（组合 API）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;setup 配置&lt;/li&gt;
+&lt;li&gt;ref 与 reactive&lt;/li&gt;
+&lt;li&gt;watch 与 watchEffect&lt;/li&gt;
+&lt;li&gt;provide 与 inject&lt;/li&gt;
+&lt;li&gt;......&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;新的内置组件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fragment&lt;/li&gt;
+&lt;li&gt;Teleport&lt;/li&gt;
+&lt;li&gt;Suspense&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;其他改变&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;新的生命周期钩子&lt;/li&gt;
+&lt;li&gt;data 选项应始终被声明为一个函数&lt;/li&gt;
+&lt;li&gt;移除 keyCode 支持作为 v-on 的修饰符&lt;/li&gt;
+&lt;li&gt;......&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;一-创建vue30工程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-创建vue30工程&#34;&gt;#&lt;/a&gt; 一、创建 Vue3.0 工程&lt;/h1&gt;
+&lt;h2 id=&#34;1使用-vue-cli-创建&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1使用-vue-cli-创建&#34;&gt;#&lt;/a&gt; 1. 使用 vue-cli 创建&lt;/h2&gt;
+&lt;p&gt;官方文档：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbGkudnVlanMub3JnL3poL2d1aWRlL2NyZWF0aW5nLWEtcHJvamVjdC5odG1sI3Z1ZS1jcmVhdGU=&#34;&gt;https://cli.vuejs.org/zh/guide/creating-a-project.html#vue-create&lt;/span&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;## 查看 @vue/cli 版本，确保 @vue/cli 版本在 4.5.0 以上&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;vue &lt;span class=&#34;token parameter variable&#34;&gt;--version&lt;/span&gt; 或者 vue -V&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;大写的V&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;## 安装或者升级你的 @vue/cli&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-g&lt;/span&gt; @vue/cli&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;## 创建&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;vue create vue_test&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;## 启动&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;cd&lt;/span&gt; vue_test&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; run serve&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;2使用-vite-创建&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2使用-vite-创建&#34;&gt;#&lt;/a&gt; 2. 使用 vite 创建&lt;/h2&gt;
+&lt;p&gt;官方文档：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly92My5jbi52dWVqcy5vcmcvZ3VpZGUvaW5zdGFsbGF0aW9uLmh0bWwjdml0ZQ==&#34;&gt;https://v3.cn.vuejs.org/guide/installation.html#vite&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;vite 官网：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly92aXRlanMuY24=&#34;&gt;https://vitejs.cn&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;什么是 vite？—— 新一代前端构建工具。&lt;/li&gt;
+&lt;li&gt;优势如下：
+&lt;ul&gt;
+&lt;li&gt;开发环境中，无需打包操作，可快速的冷启动。&lt;/li&gt;
+&lt;li&gt;轻量快速的热重载（HMR）。&lt;/li&gt;
+&lt;li&gt;真正的按需编译，不再等待整个应用编译完成。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;传统构建 与 vite 构建对比图&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&amp;lt;img src=&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbi52aXRlanMuZGV2L2Fzc2V0cy9idW5kbGVyLjM3NzQwMzgwLnBuZw==&#34;&gt;https://cn.vitejs.dev/assets/bundler.37740380.png&lt;/span&gt;&amp;quot; style=&amp;quot;width:500px;height:280px;float:left&amp;quot; /&amp;gt;&amp;lt;img src=&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbi52aXRlanMuZGV2L2Fzc2V0cy9lc20uMzA3MDAxMmQucG5n&#34;&gt;https://cn.vitejs.dev/assets/esm.3070012d.png&lt;/span&gt;&amp;quot; style=&amp;quot;width:480px;height:280px&amp;quot; /&amp;gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;## 创建工程&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; init vite-app &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;project-name&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;## 进入工程目录&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;cd&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;project-name&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;## 安装依赖&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; install&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;可简写成 &lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; i&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;## 运行&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; run dev   &lt;span class=&#34;token comment&#34;&gt;## 注意这里运行命令跟之前用 vue-cli 的命令不一样&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;二-常用-composition-api&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二-常用-composition-api&#34;&gt;#&lt;/a&gt; 二、常用 Composition API&lt;/h1&gt;
+&lt;p&gt;官方文档: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly92My5jbi52dWVqcy5vcmcvZ3VpZGUvY29tcG9zaXRpb24tYXBpLWludHJvZHVjdGlvbi5odG1s&#34;&gt;https://v3.cn.vuejs.org/guide/composition-api-introduction.html&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;1拉开序幕的setup&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1拉开序幕的setup&#34;&gt;#&lt;/a&gt; 1. 拉开序幕的 setup&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;理解：Vue3.0 中一个新的配置项，值为一个函数。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;setup 是所有 &amp;lt;strong style=&amp;quot;color:#DD5145&amp;quot;&amp;gt;Composition API（组合 API）&amp;lt;/strong&amp;gt;&amp;lt;i style=&amp;quot;color:gray;font-weight:bold&amp;quot;&amp;gt;“ 表演的舞台 ”&amp;lt;/i&amp;gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;组件中所用到的：数据、方法等等，均要配置在 setup 中。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;setup 函数的两种返回值：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;若返回一个对象，则对象中的属性、方法，在模板中均可以直接使用。（重点关注！）&lt;/li&gt;
+&lt;li&gt;&amp;lt;span style=&amp;quot;color:#aad&amp;quot;&amp;gt; 若返回一个渲染函数：则可以自定义渲染内容。（了解）&amp;lt;/span&amp;gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;注意点：(注意，目前尽量不要混用，后续生态完善了或许可以)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;尽量不要与 Vue2.x 配置混用&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vue2.x 配置（data、methos、computed...）中 &amp;lt;strong style=&amp;quot;color:#DD5145&amp;quot;&amp;gt; 可以访问到 &amp;lt;/strong&amp;gt;setup 中的属性、方法。&lt;/li&gt;
+&lt;li&gt;但在 setup 中 &amp;lt;strong style=&amp;quot;color:#DD5145&amp;quot;&amp;gt; 不能访问到 &amp;lt;/strong&amp;gt;Vue2.x 配置（data、methos、computed...）。&lt;/li&gt;
+&lt;li&gt;如果有重名，setup 优先。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;setup 不能是一个 async 函数，因为返回值不再是 return 的对象，而是 promise, 模板看不到 return 对象中的属性。（后期也可以返回一个 Promise 实例，但需要 Suspense 和异步组件的配合）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Promose 讲解&lt;/p&gt;
+&lt;p&gt;promise 是一个对异步操作进行封装并返回其结果的构造函数.&lt;br /&gt;
+ 使代码更加简洁和避免回调地狱。&lt;br /&gt;
+promise 是浏览器引擎自带的（但不是所有浏览器都支持 promise）&lt;/p&gt;
+&lt;p&gt;promise 的参数是一个函数，函数里有两个参数，这两个参数也是函数。res 和 rej 这两个参数都是函数，名字随意。&lt;br /&gt;
+res 是成功时的回调&lt;br /&gt;
+ rej 是失败时的回调&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;//res 是成功时的回调 rej 是失败时的回调&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; p &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Promise&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;res&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;rej&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;p&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;代码实例&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;&amp;lt;template&amp;gt;
+  &amp;lt;h1&amp;gt;我是App组件&amp;lt;/h1&amp;gt;
+  &amp;lt;h1&amp;gt;姓名:&amp;#123;&amp;#123;name&amp;#125;&amp;#125;&amp;lt;/h1&amp;gt;
+  &amp;lt;h1&amp;gt;年龄:&amp;#123;&amp;#123;age&amp;#125;&amp;#125;&amp;lt;/h1&amp;gt;
+  &amp;lt;button @click=&amp;quot;sayHello&amp;quot;&amp;gt;说话&amp;lt;/button&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+
+// import &amp;#123;h&amp;#125; from &#39;vue&#39; // 用渲染函数 才需要引用
+export default &amp;#123;
+  name: &#39;App&#39;,
+  setup()&amp;#123;
+   // 数据
+   let name = &#39;张三&#39;
+   let  age = 18
+
+   // 方法
+   function sayHello()&amp;#123;
+    alert(`我叫$&amp;#123;name&amp;#125;，我$&amp;#123;age&amp;#125;岁了，你好啊！`) // 注意里面要被解析成变量要用模板解析的那个引号 ``
+   &amp;#125;
+      
+      
+
+   // 返回一个对象 返回之后才能用里面的东西 (常用)
+    return &amp;#123;
+     name,
+     age,
+    sayHello
+    &amp;#125;
+
+   // 返回一个函数 (渲染函数,了解) 它返回的东西会整个的替换掉该组件中所有的内容 
+   // 用这个的话注意上面还要引用
+ //  return ()=&amp;gt; h(&#39;h1&#39;,&#39;哈哈哈&#39;)
+  &amp;#125;
+&amp;#125;
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;2ref函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2ref函数&#34;&gt;#&lt;/a&gt; 2.ref 函数&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;作用：定义一个响应式的数据&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;语法:  &lt;code&gt;const xxx = ref(initValue)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;创建一个包含响应式数据的 &amp;lt;strong style=&amp;quot;color:#DD5145&amp;quot;&amp;gt; 引用对象（reference 对象，简称 ref 对象）&amp;lt;/strong&amp;gt;。&lt;/li&gt;
+&lt;li&gt;JS 中操作数据：  &lt;code&gt;xxx.value&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;模板中读取数据：不需要.value，直接： &lt;code&gt;&amp;lt;div&amp;gt;&amp;#123;&amp;#123;xxx&amp;#125;&amp;#125;&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;备注：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;接收的数据可以是：基本类型、也可以是对象类型。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;基本类型的数据：响应式依然是靠 &lt;code&gt;Object.defineProperty()&lt;/code&gt;  的 &lt;code&gt;get&lt;/code&gt;  与 &lt;code&gt;set&lt;/code&gt;  完成的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对象类型的数据：内部 &amp;lt;i style=&amp;quot;color:gray;font-weight:bold&amp;quot;&amp;gt;“ 求助 ”&amp;lt;/i&amp;gt; 了 Vue3.0 中的一个新函数 ——  &lt;code&gt;reactive&lt;/code&gt;  函数。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;&amp;lt;template&amp;gt;
+  &amp;lt;h1&amp;gt;我是App组件&amp;lt;/h1&amp;gt;
+  &amp;lt;h1&amp;gt;姓名:&amp;#123;&amp;#123;name&amp;#125;&amp;#125;&amp;lt;/h1&amp;gt;
+  &amp;lt;h1&amp;gt;年龄:&amp;#123;&amp;#123;age&amp;#125;&amp;#125;&amp;lt;/h1&amp;gt;
+  &amp;lt;h1&amp;gt;工作：&amp;#123;&amp;#123;obj.type&amp;#125;&amp;#125;&amp;lt;/h1&amp;gt;
+  &amp;lt;h1&amp;gt;工资：&amp;#123;&amp;#123;obj.salary&amp;#125;&amp;#125;&amp;lt;/h1&amp;gt;
+  &amp;lt;button @click=&amp;quot;sayHello&amp;quot;&amp;gt;说话&amp;lt;/button&amp;gt;
+  &amp;lt;button @click=&amp;quot;changInfo&amp;quot;&amp;gt;修改个人信息&amp;lt;/button&amp;gt;
+&amp;lt;button @click=&amp;quot;changSalary&amp;quot;&amp;gt;修改工资&amp;lt;/button&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+
+// import &amp;#123;h&amp;#125; from &#39;vue&#39; // 用渲染函数 才需要引用
+import &amp;#123;ref&amp;#125; from &#39;vue&#39;  // 这里记得引用ref函数
+export default &amp;#123;
+  name: &#39;App&#39;,
+  setup()&amp;#123;
+   // 数据
+   let name = ref(&#39;张三&#39;)  // 定义数据时候需要用ref
+   let age = ref(18)
+   let obj = ref(&amp;#123;
+     type:&#39;前端工程师&#39;,
+     salary:&#39;30k&#39;
+   &amp;#125;)&#39;
+
+   // 方法
+   function sayHello()&amp;#123;
+    alert(`我叫$&amp;#123;name.value&amp;#125;，我$&amp;#123;age.value&amp;#125;岁了，你好啊！`)
+   &amp;#125;
+
+   function changInfo()&amp;#123;
+      name.value = &#39;李四&#39;   // 修改数据需要通过它的value值来操作
+      age.value = 48 
+   &amp;#125;
+      
+   
+   function changSalary()&amp;#123;       // 修改对象的话 .value后面直接.属性就行 用ref的话
+    obj.value.type = &#39;UI设计师&#39;
+    obj.value.salary = &#39;60k&#39;
+   &amp;#125;
+
+   // 返回一个对象 返回之后才能用里面的东西 (常用)
+   return &amp;#123;
+    name,
+    age,
+    obj,
+    sayHello,
+    changInfo,
+    changSalary
+   &amp;#125;
+
+   // 返回一个函数 (渲染函数,了解) 它返回的东西会整个的替换掉该组件中所有的内容 
+   // 用这个的话注意上面还要引用
+//    return ()=&amp;gt; h(&#39;h1&#39;,&#39;哈哈哈&#39;)
+  &amp;#125;
+&amp;#125;
+&amp;lt;/script&amp;gt;
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3reactive函数不能用于基本数据类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3reactive函数不能用于基本数据类型&#34;&gt;#&lt;/a&gt; 3.reactive 函数 (不能用于基本数据类型)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;作用：定义一个 &amp;lt;strong style=&amp;quot;color:#DD5145&amp;quot;&amp;gt; 对象类型 &amp;lt;/strong &amp;gt; 的响应式数据（基本类型不要用它，要用 &lt;code&gt;ref&lt;/code&gt;  函数）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;语法： &lt;code&gt;const 代理对象= reactive(源对象)&lt;/code&gt;  接收一个对象（或数组），返回一个 &amp;lt;strong style=&amp;quot;color:#DD5145&amp;quot;&amp;gt; 代理对象（Proxy 的实例对象，简称 proxy 对象）&amp;lt;/strong&amp;gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;reactive 定义的响应式数据是 “深层次的”。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;内部基于 ES6 的 Proxy 实现，通过代理对象操作源对象内部数据进行操作。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;代码实例&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;&amp;lt;template&amp;gt;
+  &amp;lt;h1&amp;gt;我是App组件&amp;lt;/h1&amp;gt;
+  &amp;lt;h1&amp;gt;姓名:&amp;#123;&amp;#123;person.name&amp;#125;&amp;#125;&amp;lt;/h1&amp;gt;
+  &amp;lt;h1&amp;gt;年龄:&amp;#123;&amp;#123;person.age&amp;#125;&amp;#125;&amp;lt;/h1&amp;gt;
+  &amp;lt;h1&amp;gt;工作：&amp;#123;&amp;#123;person.job.type&amp;#125;&amp;#125;&amp;lt;/h1&amp;gt;
+  &amp;lt;h1&amp;gt;工资：&amp;#123;&amp;#123;person.job.salary&amp;#125;&amp;#125;&amp;lt;/h1&amp;gt;
+  &amp;lt;h1&amp;gt;测试深层嵌套: &amp;#123;&amp;#123;person.job.a.b.c&amp;#125;&amp;#125;&amp;lt;/h1&amp;gt;
+  &amp;lt;button @click=&amp;quot;changInfo&amp;quot;&amp;gt;修改个人信息&amp;lt;/button&amp;gt;
+
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+
+// import &amp;#123;h&amp;#125; from &#39;vue&#39; // 用渲染函数 才需要引用
+import &amp;#123;reactive&amp;#125; from &#39;vue&#39;  // 记得引入
+export default &amp;#123;
+  name: &#39;App&#39;,
+  setup()&amp;#123;
+   // 数据
+   let person  = reactive(&amp;#123;   // 全对象式数据
+     name:&#39;张三&#39;,
+     age: 18,
+     job:&amp;#123;
+        type: &#39;前端工程师&#39;,
+        salary:&#39;30k&#39;,
+        a:&amp;#123;
+            b:&amp;#123;
+                c:111
+            &amp;#125;
+        &amp;#125;
+     &amp;#125;
+   &amp;#125;)
+   
+   // 也可以用它修改数组
+ //  let arr = reactive([&#39;哈哈&#39;,&#39;拉拉&#39;,&#39;也有&#39;,&#39;尽量&#39;,&#39;可以&#39;])
+ //  arr[0] = &#39;爷爷&#39;
+
+   // 方法
+ 
+   function changInfo()&amp;#123;            // 用了reactive之后，可以直接不用value来修改，直接.的方式
+      person.name = &#39;李四&#39;
+      person.age = 48 
+      person.job.type =&#39;UI工程师&#39;
+      person.job.salary = &#39;40k&#39;
+      person.job.a.b.c = 666
+   &amp;#125;
+
+  
+
+   // 返回一个对象 返回之后才能用里面的东西 (常用)
+   return &amp;#123;
+   person,
+  changInfo
+    
+   &amp;#125;
+
+   // 返回一个函数 (渲染函数,了解) 它返回的东西会整个的替换掉该组件中所有的内容 
+   // 用这个的话注意上面还要引用
+//    return ()=&amp;gt; h(&#39;h1&#39;,&#39;哈哈哈&#39;)
+  &amp;#125;
+&amp;#125;
+&amp;lt;/script&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;vue3-中添加和删除属性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vue3-中添加和删除属性&#34;&gt;#&lt;/a&gt; vue3 中添加和删除属性&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;&amp;lt;script&amp;gt;
+    // 这里的一切操作都是在用了 reactive 的前提下
+    
+    // 添加数据
+    person.sex = &#39;男&#39;   // 直接这样写属性里面没有的 就是添加了
+    
+    // 删除属性
+    delete person.name  // 删除person里面的name属性
+    
+    &amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4vue30中的响应式原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4vue30中的响应式原理&#34;&gt;#&lt;/a&gt; 4.Vue3.0 中的响应式原理&lt;/h2&gt;
+&lt;h3 id=&#34;vue2x的响应式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vue2x的响应式&#34;&gt;#&lt;/a&gt; vue2.x 的响应式&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;实现原理：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;对象类型：通过 &lt;code&gt;Object.defineProperty()&lt;/code&gt;  对属性的读取、修改进行拦截（数据劫持）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;数组类型：通过重写更新数组的一系列方法来实现拦截。（对数组的变更方法进行了包裹）。&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Object&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;defineProperty&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;data&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;count&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;get&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;存在问题：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;新增属性、删除属性，界面不会更新。&lt;/li&gt;
+&lt;li&gt;直接通过下标修改数组，界面不会自动更新。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;vue30的响应式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vue30的响应式&#34;&gt;#&lt;/a&gt; Vue3.0 的响应式&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;实现原理:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;通过 Proxy（代理）:  拦截对象中任意属性的变化，包括：属性值的读写、属性的添加、属性的删除等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;通过 Reflect（反射）:  对源对象的属性进行操作。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MDN 文档中描述的 Proxy 与 Reflect：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Proxy：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtQ04vZG9jcy9XZWIvSmF2YVNjcmlwdC9SZWZlcmVuY2UvR2xvYmFsX09iamVjdHMvUHJveHk=&#34;&gt;https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Proxy&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reflect：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtQ04vZG9jcy9XZWIvSmF2YVNjcmlwdC9SZWZlcmVuY2UvR2xvYmFsX09iamVjdHMvUmVmbGVjdA==&#34;&gt;https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Reflect&lt;/span&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Proxy&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;data&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token comment&#34;&gt;// 拦截读取属性值&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;get&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;target&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; prop&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    	&lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; Reflect&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;get&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;target&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; prop&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 拦截设置属性值或添加新属性&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;target&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; prop&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; value&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    	&lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; Reflect&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;set&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;target&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; prop&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; value&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 拦截删除属性&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;deleteProperty&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;target&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; prop&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    	&lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; Reflect&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;deleteProperty&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;target&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; prop&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;proxy&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;name &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;tom&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5reactive对比ref&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#5reactive对比ref&#34;&gt;#&lt;/a&gt; 5.reactive 对比 ref&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;从定义数据角度对比：
+&lt;ul&gt;
+&lt;li&gt;ref 用来定义：&amp;lt;strong style=&amp;quot;color:#DD5145&amp;quot;&amp;gt; 基本类型数据 &amp;lt;/strong&amp;gt;。&lt;/li&gt;
+&lt;li&gt;reactive 用来定义：&amp;lt;strong style=&amp;quot;color:#DD5145&amp;quot;&amp;gt; 对象（或数组）类型数据 &amp;lt;/strong&amp;gt;。&lt;/li&gt;
+&lt;li&gt;备注：ref 也可以用来定义 &amp;lt;strong style=&amp;quot;color:#DD5145&amp;quot;&amp;gt; 对象（或数组）类型数据 &amp;lt;/strong&amp;gt;, 它内部会自动通过 &lt;code&gt;reactive&lt;/code&gt;  转为 &amp;lt;strong style=&amp;quot;color:#DD5145&amp;quot;&amp;gt; 代理对象 &amp;lt;/strong&amp;gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;从原理角度对比：
+&lt;ul&gt;
+&lt;li&gt;ref 通过 &lt;code&gt;Object.defineProperty()&lt;/code&gt;  的 &lt;code&gt;get&lt;/code&gt;  与 &lt;code&gt;set&lt;/code&gt;  来实现响应式（数据劫持）。&lt;/li&gt;
+&lt;li&gt;reactive 通过使用 &amp;lt;strong style=&amp;quot;color:#DD5145&amp;quot;&amp;gt;Proxy&amp;lt;/strong &amp;gt; 来实现响应式（数据劫持）, 并通过 &amp;lt; strong style=&amp;quot;color:#DD5145&amp;quot;&amp;gt;Reflect&amp;lt;/strong &amp;gt; 操作 &amp;lt; strong style=&amp;quot;color:orange&amp;quot;&amp;gt; 源对象 &amp;lt;/strong &amp;gt; 内部的数据。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;从使用角度对比：
+&lt;ul&gt;
+&lt;li&gt;ref 定义的数据：操作数据 &amp;lt;strong style=&amp;quot;color:#DD5145&amp;quot;&amp;gt; 需要 &amp;lt;/strong&amp;gt; &lt;code&gt;.value&lt;/code&gt; ，读取数据时模板中直接读取 &amp;lt;strong style=&amp;quot;color:#DD5145&amp;quot;&amp;gt; 不需要 &amp;lt;/strong&amp;gt; &lt;code&gt;.value&lt;/code&gt; 。&lt;/li&gt;
+&lt;li&gt;reactive 定义的数据：操作数据与读取数据：&amp;lt;strong style=&amp;quot;color:#DD5145&amp;quot;&amp;gt; 均不需要 &amp;lt;/strong&amp;gt; &lt;code&gt;.value&lt;/code&gt; 。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6setup的两个注意点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#6setup的两个注意点&#34;&gt;#&lt;/a&gt; 6.setup 的两个注意点&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;setup 执行的时机&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在 beforeCreate 之前执行一次，this 是 undefined。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;setup 的参数&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;props：值为对象，包含：组件外部传递过来，且组件内部声明接收了的属性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;context：上下文对象&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;attrs: 值为对象，包含：组件外部传递过来，但没有在 props 配置中声明的属性，相当于  &lt;code&gt;this.$attrs&lt;/code&gt; 。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;slots: 收到的插槽内容，相当于  &lt;code&gt;this.$slots&lt;/code&gt; 。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;emit: 分发自定义事件的函数，相当于  &lt;code&gt;this.$emit&lt;/code&gt; 。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;代码实例&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;// App.vue组件
+&amp;lt;template&amp;gt;
+	&amp;lt;Demo @hello=&amp;quot;showHelloMsg&amp;quot; msg=&amp;quot;你好啊&amp;quot; school=&amp;quot;尚硅谷&amp;quot;&amp;gt;
+		&amp;lt;template v-slot:qwe&amp;gt;
+			&amp;lt;span&amp;gt;尚硅谷&amp;lt;/span&amp;gt;
+		&amp;lt;/template&amp;gt;
+		&amp;lt;template v-slot:asd&amp;gt;
+			&amp;lt;span&amp;gt;尚硅谷&amp;lt;/span&amp;gt;
+		&amp;lt;/template&amp;gt;
+	&amp;lt;/Demo&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+	import Demo from &#39;./components/Demo&#39;
+	export default &amp;#123;
+		name: &#39;App&#39;,
+		components:&amp;#123;Demo&amp;#125;,
+		setup()&amp;#123;
+			function showHelloMsg(value)&amp;#123;
+				alert(`你好啊，你触发了hello事件，我收到的参数是:$&amp;#123;value&amp;#125;！`)
+			&amp;#125;
+			return &amp;#123;
+				showHelloMsg
+			&amp;#125;
+		&amp;#125;
+	&amp;#125;
+&amp;lt;/script&amp;gt;
+
+// 子组件
+&amp;lt;template&amp;gt;
+	&amp;lt;h1&amp;gt;一个人的信息&amp;lt;/h1&amp;gt;
+	&amp;lt;h2&amp;gt;姓名：&amp;#123;&amp;#123;person.name&amp;#125;&amp;#125;&amp;lt;/h2&amp;gt;
+	&amp;lt;h2&amp;gt;年龄：&amp;#123;&amp;#123;person.age&amp;#125;&amp;#125;&amp;lt;/h2&amp;gt;
+	&amp;lt;button @click=&amp;quot;test&amp;quot;&amp;gt;测试触发一下Demo组件的Hello事件&amp;lt;/button&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+	import &amp;#123;reactive&amp;#125; from &#39;vue&#39;
+	export default &amp;#123;
+		name: &#39;Demo&#39;,
+		props:[&#39;msg&#39;,&#39;school&#39;],
+		emits:[&#39;hello&#39;],
+		setup(props,context)&amp;#123;
+			// console.log(&#39;---setup---&#39;,props)
+			// console.log(&#39;---setup---&#39;,context)
+			// console.log(&#39;---setup---&#39;,context.attrs) //相当与Vue2中的$attrs
+			// console.log(&#39;---setup---&#39;,context.emit) //触发自定义事件的。
+			console.log(&#39;---setup---&#39;,context.slots) //插槽
+			//数据
+			let person = reactive(&amp;#123;
+				name:&#39;张三&#39;,
+				age:18
+			&amp;#125;)
+
+			//方法
+			function test()&amp;#123;
+				context.emit(&#39;hello&#39;,666)
+			&amp;#125;
+
+			//返回一个对象（常用）
+			return &amp;#123;
+				person,
+				test
+			&amp;#125;
+		&amp;#125;
+	&amp;#125;
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7计算属性与监视&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#7计算属性与监视&#34;&gt;#&lt;/a&gt; 7. 计算属性与监视&lt;/h2&gt;
+&lt;h3 id=&#34;1computed函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1computed函数&#34;&gt;#&lt;/a&gt; 1.computed 函数&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;与 Vue2.x 中 computed 配置功能一致&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;写法&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;computed&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;vue&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;default&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token literal-property property&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;Demo&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;setup&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token operator&#34;&gt;...&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token comment&#34;&gt;// 数据&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token keyword&#34;&gt;let&lt;/span&gt; person  &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;reactive&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;   &lt;span class=&#34;token comment&#34;&gt;// 全对象式数据&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token literal-property property&#34;&gt;firstName&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;张&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token literal-property property&#34;&gt;lastName&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;三&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token comment&#34;&gt;// 计算属性 —— 简写&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;let&lt;/span&gt; fullName &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;computed&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;           &lt;span class=&#34;token comment&#34;&gt;// 直接在 person 上追加一个新属性 在调用 computed () 方法&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; person&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;firstName &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;-&#39;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; person&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;lastName&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 计算属性 —— 完整&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;let&lt;/span&gt; fullName &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;computed&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token function&#34;&gt;get&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; person&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;firstName &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;-&#39;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; person&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;lastName&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token function&#34;&gt;set&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;value&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; nameArr &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; value&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;split&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;-&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            person&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;firstName &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; nameArr&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            person&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;lastName &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; nameArr&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2watch函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2watch函数&#34;&gt;#&lt;/a&gt; 2.watch 函数&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;与 Vue2.x 中 watch 配置功能一致&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;两个小 “坑”：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;监视 reactive 定义的响应式数据时：oldValue 无法正确获取、强制开启了深度监视（deep 配置失效）。&lt;/li&gt;
+&lt;li&gt;监视 reactive 定义的响应式数据中某个属性时：deep 配置有效。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;ref&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; watch&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;vue&#39;&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;// 记得引入&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;default&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token literal-property property&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;Demo&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token function&#34;&gt;setup&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token comment&#34;&gt;// 数据&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;let&lt;/span&gt; sum &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;ref&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;let&lt;/span&gt; msg &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;ref&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;你好啊&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;let&lt;/span&gt; person &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;reactive&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;				&lt;span class=&#34;token literal-property property&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;张三&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;				&lt;span class=&#34;token literal-property property&#34;&gt;age&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;				&lt;span class=&#34;token literal-property property&#34;&gt;job&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;					&lt;span class=&#34;token literal-property property&#34;&gt;j1&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;						&lt;span class=&#34;token literal-property property&#34;&gt;salary&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;20&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;					&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;				&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 情况一：监视 ref 定义的响应式数据&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;watch&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;sum&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;newValue&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;oldValue&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;sum变化了&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;newValue&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;oldValue&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token literal-property property&#34;&gt;immediate&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 情况二：监视多个 ref 定义的响应式数据&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;watch&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;sum&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;msg&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;newValue&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;oldValue&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;sum或msg变化了&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;newValue&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;oldValue&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;/* 情况三：监视 reactive 定义的响应式数据&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			若 watch 监视的是 reactive 定义的响应式数据，则无法正确获得 oldValue！！&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			若 watch 监视的是 reactive 定义的响应式数据，则强制开启了深度监视 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;31&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;*/&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;32&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;watch&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;person&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;newValue&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;oldValue&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;33&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;person变化了&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;newValue&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;oldValue&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;34&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token literal-property property&#34;&gt;immediate&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token literal-property property&#34;&gt;deep&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 此处的 deep 配置不再奏效&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;35&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;36&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 情况四：监视 reactive 定义的响应式数据中的某个属性&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;37&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;watch&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt;person&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;job&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;newValue&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;oldValue&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;38&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;person的job变化了&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;newValue&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;oldValue&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;39&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token literal-property property&#34;&gt;immediate&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token literal-property property&#34;&gt;deep&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;40&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;41&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 情况五：监视 reactive 定义的响应式数据中的某些属性&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;42&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;watch&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt;person&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;job&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt;person&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;name&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;newValue&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;oldValue&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;43&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;person的job变化了&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;newValue&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;oldValue&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;44&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token literal-property property&#34;&gt;immediate&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token literal-property property&#34;&gt;deep&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;45&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;46&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 特殊情况&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;47&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;watch&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt;person&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;job&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;newValue&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;oldValue&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;48&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;person的job变化了&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;newValue&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;oldValue&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;49&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token literal-property property&#34;&gt;deep&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 此处由于监视的是 reactive 素定义的对象中的某个属性，所以 deep 配置有效&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;50&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;51&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;52&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;53&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token comment&#34;&gt;// 监视对象深层的属性&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;54&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;55&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token function&#34;&gt;watch&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;person&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;newValue&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;oldValue&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;56&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;				console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;person的值变化了&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;newValue&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;oldValue&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;57&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token literal-property property&#34;&gt;deep&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 开启深度监视&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;58&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token comment&#34;&gt;// 或者&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;59&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;60&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token function&#34;&gt;watch&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;person&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;vlue&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;newValue&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;oldValue&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;61&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;				console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;person的值变化了&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;newValue&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;oldValue&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;62&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;63&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;64&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;65&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;66&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;67&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 返回一个对象 返回之后才能用里面的东西 (常用)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;68&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;69&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   sum&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;70&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   msg&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;71&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   person&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;72&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;73&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;74&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;75&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3watcheffect函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3watcheffect函数&#34;&gt;#&lt;/a&gt; 3.watchEffect 函数&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;watch 的套路是：既要指明监视的属性，也要指明监视的回调。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;watchEffect 的套路是：不用指明监视哪个属性，监视的回调中用到哪个属性，那就监视哪个属性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;watchEffect 有点像 computed：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;但 computed 注重的计算出来的值（回调函数的返回值），所以必须要写返回值。&lt;/li&gt;
+&lt;li&gt;而 watchEffect 更注重的是过程（回调函数的函数体），所以不用写返回值。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;//watchEffect 所指定的回调中用到的数据只要发生变化，则直接重新执行回调。&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;watchEffect&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; x1 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; sum&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;value&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; x2 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; person&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;age&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;watchEffect配置的回调执行了&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;8生命周期&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#8生命周期&#34;&gt;#&lt;/a&gt; 8. 生命周期&lt;/h2&gt;
+&lt;p&gt;&amp;lt;div style=&amp;quot;border:1px solid black;width:380px;float:left;margin-right:20px;&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;vue2.x 的生命周期 &amp;lt;/strong&amp;gt;&amp;lt;img src=&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbi52dWVqcy5vcmcvaW1hZ2VzL2xpZmVjeWNsZS5wbmc=&#34;&gt;https://cn.vuejs.org/images/lifecycle.png&lt;/span&gt;&amp;quot;alt=&amp;quot;lifecycle_2&amp;quot;style=&amp;quot;zoom:33%;width:1200px&amp;quot;/&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;border:1px solid black;width:510px;height:985px;float:left&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;vue3.0 的生命周期 &amp;lt;/strong&amp;gt;&amp;lt;img src=&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly92My5jbi52dWVqcy5vcmcvaW1hZ2VzL2xpZmVjeWNsZS5zdmc=&#34;&gt;https://v3.cn.vuejs.org/images/lifecycle.svg&lt;/span&gt;&amp;quot; alt=&amp;quot;lifecycle_2&amp;quot; style=&amp;quot;zoom:33%;width:2500px&amp;quot; /&amp;gt;&amp;lt;/div&amp;gt;&lt;/p&gt;
+&lt;p&gt;1&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vue3.0 中可以继续使用 Vue2.x 中的生命周期钩子，但有有两个被更名：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;beforeDestroy&lt;/code&gt;  改名为  &lt;code&gt;beforeUnmount&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;destroyed&lt;/code&gt;  改名为  &lt;code&gt;unmounted&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Vue3.0 也提供了 Composition API 形式的生命周期钩子，与 Vue2.x 中钩子对应关系如下：（都是函数，需要导入，全部写在 setup 里面）
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;beforeCreate&lt;/code&gt; ===&amp;gt; &lt;code&gt;setup()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;created&lt;/code&gt; =======&amp;gt; &lt;code&gt;setup()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;beforeMount&lt;/code&gt;  ===&amp;gt; &lt;code&gt;onBeforeMount&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mounted&lt;/code&gt; =======&amp;gt; &lt;code&gt;onMounted&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;beforeUpdate&lt;/code&gt; ===&amp;gt; &lt;code&gt;onBeforeUpdate&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;updated&lt;/code&gt;  =======&amp;gt; &lt;code&gt;onUpdated&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;beforeUnmount&lt;/code&gt;  ==&amp;gt; &lt;code&gt;onBeforeUnmount&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;unmounted&lt;/code&gt;  =====&amp;gt; &lt;code&gt;onUnmounted&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;9自定义hook函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#9自定义hook函数&#34;&gt;#&lt;/a&gt; 9. 自定义 hook 函数&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;什么是 hook？—— 本质是一个函数，把 setup 函数中使用的 Composition API 进行了封装。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;类似于 vue2.x 中的 mixin。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;自定义 hook 的优势：复用代码，让 setup 中的逻辑更清楚易懂。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;10toref&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#10toref&#34;&gt;#&lt;/a&gt; 10.toRef&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;作用：创建一个 ref 对象，其 value 值指向另一个对象中的某个属性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;语法： &lt;code&gt;const name = toRef(person,&#39;name&#39;)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;应用：要将响应式对象中的某个属性单独提供给外部使用时。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;扩展： &lt;code&gt;toRefs&lt;/code&gt;  与 &lt;code&gt;toRef&lt;/code&gt;  功能一致，但可以批量创建多个 ref 对象，语法： &lt;code&gt;toRefs(person)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;三-其它-composition-api&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#三-其它-composition-api&#34;&gt;#&lt;/a&gt; 三、其它 Composition API&lt;/h1&gt;
+&lt;h2 id=&#34;1shallowreactive-与-shallowref&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1shallowreactive-与-shallowref&#34;&gt;#&lt;/a&gt; 1.shallowReactive 与 shallowRef&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;shallowReactive：只处理对象最外层属性的响应式（浅响应式）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;shallowRef：只处理基本数据类型的响应式，不进行对象的响应式处理。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;什么时候使用？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;如果有一个对象数据，结构比较深，但变化时只是外层属性变化 ===&amp;gt; shallowReactive。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果有一个对象数据，后续功能不会修改该对象中的属性，而是生新的对象来替换 ===&amp;gt; shallowRef。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;template&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;h4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;当前的x.y值是：&lt;span class=&#34;token comment&#34;&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;h4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;button&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;@click&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;x=&amp;#123;y:888&amp;#125;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;点我替换x&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;button&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;button&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;@click&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;x.y++&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;点我x.y++&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;button&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;hr&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;h4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token comment&#34;&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;h4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;h2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;姓名：&lt;span class=&#34;token comment&#34;&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;h2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;h2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;年龄：&lt;span class=&#34;token comment&#34;&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;h2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;h2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;薪资：&lt;span class=&#34;token comment&#34;&gt;&lt;/span&gt;K&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;h2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;button&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;@click&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;name+=&#39;~&#39;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;修改姓名&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;button&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;button&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;@click&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;age++&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;增长年龄&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;button&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;button&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;@click&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;job.j1.salary++&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;涨薪&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;button&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;template&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token script&#34;&gt;&lt;span class=&#34;token language-javascript&#34;&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;ref&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;reactive&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;toRef&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;toRefs&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;shallowReactive&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;shallowRef&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;vue&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;default&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		&lt;span class=&#34;token literal-property property&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;Demo&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		&lt;span class=&#34;token function&#34;&gt;setup&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token comment&#34;&gt;// 数据&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token comment&#34;&gt;//let person = shallowReactive (&amp;#123; // 只考虑第一层数据的响应式&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token keyword&#34;&gt;let&lt;/span&gt; person &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;reactive&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;				&lt;span class=&#34;token literal-property property&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;张三&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;				&lt;span class=&#34;token literal-property property&#34;&gt;age&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;				&lt;span class=&#34;token literal-property property&#34;&gt;job&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;					&lt;span class=&#34;token literal-property property&#34;&gt;j1&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;						&lt;span class=&#34;token literal-property property&#34;&gt;salary&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;20&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;					&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;				&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;31&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token keyword&#34;&gt;let&lt;/span&gt; x &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;shallowRef&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;32&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;				&lt;span class=&#34;token literal-property property&#34;&gt;y&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;33&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;34&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;******&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;x&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;35&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;36&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token comment&#34;&gt;// 返回一个对象（常用）&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;37&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;38&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;				x&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;39&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;				person&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;40&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;				&lt;span class=&#34;token operator&#34;&gt;...&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;toRefs&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;person&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;41&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;42&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;43&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;44&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2readonly-与-shallowreadonly&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2readonly-与-shallowreadonly&#34;&gt;#&lt;/a&gt; 2.readonly 与 shallowReadonly&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;readonly: 让一个响应式数据变为只读的（深只读）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;shallowReadonly：让一个响应式数据变为只读的（浅只读）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;应用场景：不希望数据被修改时。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3toraw-与-markraw&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3toraw-与-markraw&#34;&gt;#&lt;/a&gt; 3.toRaw 与 markRaw&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;toRaw：
+&lt;ul&gt;
+&lt;li&gt;作用：将一个由 &lt;code&gt;reactive&lt;/code&gt;  生成的 &amp;lt;strong style=&amp;quot;color:orange&amp;quot;&amp;gt; 响应式对象 &amp;lt;/strong &amp;gt; 转为 &amp;lt; strong style=&amp;quot;color:orange&amp;quot;&amp;gt; 普通对象 &amp;lt;/strong&amp;gt;。&lt;/li&gt;
+&lt;li&gt;使用场景：用于读取响应式对象对应的普通对象，对这个普通对象的所有操作，不会引起页面更新。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;markRaw：
+&lt;ul&gt;
+&lt;li&gt;作用：标记一个对象，使其永远不会再成为响应式对象。&lt;/li&gt;
+&lt;li&gt;应用场景:
+&lt;ol&gt;
+&lt;li&gt;有些值不应被设置为响应式的，例如复杂的第三方类库等。&lt;/li&gt;
+&lt;li&gt;当渲染具有不可变数据源的大列表时，跳过响应式转换可以提高性能。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4customref&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4customref&#34;&gt;#&lt;/a&gt; 4.customRef&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;作用：创建一个自定义的 ref，并对其依赖项跟踪和更新触发进行显式控制。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;实现防抖效果：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;&amp;lt;template&amp;gt;
+	&amp;lt;input type=&amp;quot;text&amp;quot; v-model=&amp;quot;keyword&amp;quot;&amp;gt;
+	&amp;lt;h3&amp;gt;&amp;#123;&amp;#123;keyword&amp;#125;&amp;#125;&amp;lt;/h3&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+	import &amp;#123;ref,customRef&amp;#125; from &#39;vue&#39;
+	export default &amp;#123;
+		name:&#39;Demo&#39;,
+		setup()&amp;#123;
+			// let keyword = ref(&#39;hello&#39;) //使用Vue准备好的内置ref
+			//自定义一个myRef
+			function myRef(value,delay)&amp;#123;
+				let timer
+				//通过customRef去实现自定义
+				return customRef((track,trigger)=&amp;gt;&amp;#123;
+					return&amp;#123;
+						get()&amp;#123;
+							track() //告诉Vue这个value值是需要被“追踪”的
+							return value
+						&amp;#125;,
+						set(newValue)&amp;#123;
+							clearTimeout(timer)
+							timer = setTimeout(()=&amp;gt;&amp;#123;
+								value = newValue
+								trigger() //告诉Vue去更新界面
+							&amp;#125;,delay)
+						&amp;#125;
+					&amp;#125;
+				&amp;#125;)
+			&amp;#125;
+			let keyword = myRef(&#39;hello&#39;,500) //使用程序员自定义的ref
+			return &amp;#123;
+				keyword
+			&amp;#125;
+		&amp;#125;
+	&amp;#125;
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5provide-与-inject&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#5provide-与-inject&#34;&gt;#&lt;/a&gt; 5.provide 与 inject&lt;/h2&gt;
+&lt;p&gt;&amp;lt;img src=&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly92My5jbi52dWVqcy5vcmcvaW1hZ2VzL2NvbXBvbmVudHNfcHJvdmlkZS5wbmc=&#34;&gt;https://v3.cn.vuejs.org/images/components_provide.png&lt;/span&gt;&amp;quot; style=&amp;quot;width:300px&amp;quot; /&amp;gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;作用：实现 &amp;lt;strong style=&amp;quot;color:#DD5145&amp;quot;&amp;gt; 祖与后代组件间 &amp;lt;/strong &amp;gt; 通信 (传输数据)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;套路：父组件有一个  &lt;code&gt;provide&lt;/code&gt;  选项来提供数据，后代组件有一个  &lt;code&gt;inject&lt;/code&gt;  选项来开始使用这些数据&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;具体写法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;祖组件中：&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;setup&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token operator&#34;&gt;...&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;...&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;let&lt;/span&gt; car &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;reactive&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token literal-property property&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;奔驰&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token literal-property property&#34;&gt;price&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;40万&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;provide&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;car&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;car&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token operator&#34;&gt;...&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;...&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;后代组件中：&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;setup&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;props&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;context&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token operator&#34;&gt;...&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;...&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; car &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;inject&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;car&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;car&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token operator&#34;&gt;...&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;...&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6响应式数据的判断&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#6响应式数据的判断&#34;&gt;#&lt;/a&gt; 6. 响应式数据的判断&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;isRef: 检查一个值是否为一个 ref 对象&lt;/li&gt;
+&lt;li&gt;isReactive: 检查一个对象是否是由  &lt;code&gt;reactive&lt;/code&gt;  创建的响应式代理&lt;/li&gt;
+&lt;li&gt;isReadonly: 检查一个对象是否是由  &lt;code&gt;readonly&lt;/code&gt;  创建的只读代理&lt;/li&gt;
+&lt;li&gt;isProxy: 检查一个对象是否是由  &lt;code&gt;reactive&lt;/code&gt;  或者  &lt;code&gt;readonly&lt;/code&gt;  方法创建的代理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;四-composition-api-的优势&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#四-composition-api-的优势&#34;&gt;#&lt;/a&gt; 四、Composition API 的优势&lt;/h1&gt;
+&lt;h2 id=&#34;1options-api-存在的问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1options-api-存在的问题&#34;&gt;#&lt;/a&gt; 1.Options API 存在的问题&lt;/h2&gt;
+&lt;p&gt;使用传统 OptionsAPI 中，新增或者修改一个需求，就需要分别在 data，methods，computed 里修改 。&lt;/p&gt;
+&lt;p&gt;&amp;lt;div style=&amp;quot;width:600px;height:370px;overflow:hidden;float:left&amp;quot;&amp;gt;&lt;br /&gt;
+&amp;lt;img src=&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wMy1qdWVqaW4uYnl0ZWltZy5jb20vdG9zLWNuLWktazN1MWZicGZjcC9mODRlNGUyYzAyNDI0ZDlhOTk4NjJhZGUwYTJlNDExNH50cGx2LWszdTFmYnBmY3Atd2F0ZXJtYXJrLmltYWdl&#34;&gt;https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f84e4e2c02424d9a99862ade0a2e4114~tplv-k3u1fbpfcp-watermark.image&lt;/span&gt;&amp;quot; style=&amp;quot;width:600px;float:left&amp;quot; /&amp;gt;&lt;br /&gt;
+&amp;lt;/div&amp;gt;&lt;br /&gt;
+&amp;lt;div style=&amp;quot;width:300px;height:370px;overflow:hidden;float:left&amp;quot;&amp;gt;&lt;br /&gt;
+&amp;lt;img src=&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wOS1qdWVqaW4uYnl0ZWltZy5jb20vdG9zLWNuLWktazN1MWZicGZjcC9lNWFjN2UyMGQxNzg0ODg3YTgyNmY2MzYwNzY4YTM2OH50cGx2LWszdTFmYnBmY3Atd2F0ZXJtYXJrLmltYWdl&#34;&gt;https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e5ac7e20d1784887a826f6360768a368~tplv-k3u1fbpfcp-watermark.image&lt;/span&gt;&amp;quot; style=&amp;quot;zoom:50%;width:560px;left&amp;quot; /&amp;gt;&lt;br /&gt;
+&amp;lt;/div&amp;gt;&lt;/p&gt;
+&lt;h2 id=&#34;2composition-api-的优势&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2composition-api-的优势&#34;&gt;#&lt;/a&gt; 2.Composition API 的优势&lt;/h2&gt;
+&lt;p&gt;我们可以更加优雅的组织我们的代码，函数。让相关功能的代码更加有序的组织在一起。&lt;/p&gt;
+&lt;p&gt;&amp;lt;div style=&amp;quot;width:500px;height:340px;overflow:hidden;float:left&amp;quot;&amp;gt;&lt;br /&gt;
+&amp;lt;img src=&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wMy1qdWVqaW4uYnl0ZWltZy5jb20vdG9zLWNuLWktazN1MWZicGZjcC9iYzBiZTgyMTFmYzU0YjZjOTQxYzAzNjc5MWJhNGVmZX50cGx2LWszdTFmYnBmY3Atd2F0ZXJtYXJrLmltYWdlJTIyc3R5bGU9JTIyaGVpZ2h0OjM2MHB4&#34;&gt;https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bc0be8211fc54b6c941c036791ba4efe~tplv-k3u1fbpfcp-watermark.image&amp;quot;style=&amp;quot;height:360px&lt;/span&gt;&amp;quot;/&amp;gt;&lt;br /&gt;
+&amp;lt;/div&amp;gt;&lt;br /&gt;
+&amp;lt;div style=&amp;quot;width:430px;height:340px;overflow:hidden;float:left&amp;quot;&amp;gt;&lt;br /&gt;
+&amp;lt;img src=&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wOS1qdWVqaW4uYnl0ZWltZy5jb20vdG9zLWNuLWktazN1MWZicGZjcC82Y2M1NTE2NWMwZTM0MDY5YTc1ZmUzNmY4NzEyZWI4MH50cGx2LWszdTFmYnBmY3Atd2F0ZXJtYXJrLmltYWdlJTIyc3R5bGU9JTIyaGVpZ2h0OjM2MHB4&#34;&gt;https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6cc55165c0e34069a75fe36f8712eb80~tplv-k3u1fbpfcp-watermark.image&amp;quot;style=&amp;quot;height:360px&lt;/span&gt;&amp;quot;/&amp;gt;&lt;br /&gt;
+&amp;lt;/div&amp;gt;&lt;/p&gt;
+&lt;h1 id=&#34;五-新的组件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#五-新的组件&#34;&gt;#&lt;/a&gt; 五、新的组件&lt;/h1&gt;
+&lt;h2 id=&#34;1fragment&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1fragment&#34;&gt;#&lt;/a&gt; 1.Fragment&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;在 Vue2 中：组件必须有一个根标签&lt;/li&gt;
+&lt;li&gt;在 Vue3 中：组件可以没有根标签，内部会将多个标签包含在一个 Fragment 虚拟元素中&lt;/li&gt;
+&lt;li&gt;好处：减少标签层级，减小内存占用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2teleport&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2teleport&#34;&gt;#&lt;/a&gt; 2.Teleport&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;什么是 Teleport？——  &lt;code&gt;Teleport&lt;/code&gt;  是一种能够将我们的 &amp;lt;strong style=&amp;quot;color:#DD5145&amp;quot;&amp;gt; 组件 html 结构 &amp;lt;/strong &amp;gt; 移动到指定位置的技术。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;&amp;lt;template&amp;gt;
+	&amp;lt;div&amp;gt;
+		&amp;lt;button @click=&amp;quot;isShow = true&amp;quot;&amp;gt;点我弹个窗&amp;lt;/button&amp;gt;
+		&amp;lt;teleport to=&amp;quot;body&amp;quot;&amp;gt;
+			&amp;lt;div v-if=&amp;quot;isShow&amp;quot; class=&amp;quot;mask&amp;quot;&amp;gt;
+				&amp;lt;div class=&amp;quot;dialog&amp;quot;&amp;gt;
+					&amp;lt;h3&amp;gt;我是一个弹窗&amp;lt;/h3&amp;gt;
+					&amp;lt;h4&amp;gt;一些内容&amp;lt;/h4&amp;gt;
+					&amp;lt;h4&amp;gt;一些内容&amp;lt;/h4&amp;gt;
+					&amp;lt;h4&amp;gt;一些内容&amp;lt;/h4&amp;gt;
+					&amp;lt;button @click=&amp;quot;isShow = false&amp;quot;&amp;gt;关闭弹窗&amp;lt;/button&amp;gt;
+				&amp;lt;/div&amp;gt;
+			&amp;lt;/div&amp;gt;
+		&amp;lt;/teleport&amp;gt;
+	&amp;lt;/div&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+	import &amp;#123;ref&amp;#125; from &#39;vue&#39;
+	export default &amp;#123;
+		name:&#39;Dialog&#39;,
+		setup()&amp;#123;
+			let isShow = ref(false)
+			return &amp;#123;isShow&amp;#125;
+		&amp;#125;
+	&amp;#125;
+&amp;lt;/script&amp;gt;
+
+&amp;lt;style&amp;gt;
+	.mask&amp;#123;
+		position: absolute;
+		top: 0;bottom: 0;left: 0;right: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+	&amp;#125;
+	.dialog&amp;#123;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		text-align: center;
+		width: 300px;
+		height: 300px;
+		background-color: green;
+	&amp;#125;
+&amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3suspense&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3suspense&#34;&gt;#&lt;/a&gt; 3.Suspense&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;等待异步组件时渲染一些额外内容，让应用有更好的用户体验&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用步骤：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;异步引入组件&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;defineAsyncComponent&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;vue&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; Child &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;defineAsyncComponent&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;./components/Child.vue&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用 &lt;code&gt;Suspense&lt;/code&gt;  包裹组件，并配置好 &lt;code&gt;default&lt;/code&gt;  与  &lt;code&gt;fallback&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;&amp;lt;template&amp;gt;
+	&amp;lt;div class=&amp;quot;app&amp;quot;&amp;gt;
+		&amp;lt;h3&amp;gt;我是App组件&amp;lt;/h3&amp;gt;
+		&amp;lt;Suspense&amp;gt;
+			&amp;lt;template v-slot:default&amp;gt;
+				&amp;lt;Child/&amp;gt;
+			&amp;lt;/template&amp;gt;
+			&amp;lt;template v-slot:fallback&amp;gt;
+				&amp;lt;h3&amp;gt;加载中.....&amp;lt;/h3&amp;gt;
+			&amp;lt;/template&amp;gt;
+		&amp;lt;/Suspense&amp;gt;
+	&amp;lt;/div&amp;gt;
+&amp;lt;/template&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;六-其他&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#六-其他&#34;&gt;#&lt;/a&gt; 六、其他&lt;/h1&gt;
+&lt;h2 id=&#34;1全局api的转移&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1全局api的转移&#34;&gt;#&lt;/a&gt; 1. 全局 API 的转移&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Vue 2.x 有许多全局 API 和配置。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;例如：注册全局组件、注册全局指令等。&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 注册全局组件&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Vue&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;component&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;MyButton&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token function-variable function&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token literal-property property&#34;&gt;count&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token literal-property property&#34;&gt;template&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;&amp;lt;button @click=&#34;count++&#34;&gt;Clicked  times.&amp;lt;/button&gt;&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 注册全局指令&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Vue&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;directive&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;focus&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token function-variable function&#34;&gt;inserted&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token parameter&#34;&gt;el&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; el&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;focus&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vue3.0 中对这些 API 做出了调整：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;将全局的 API，即： &lt;code&gt;Vue.xxx&lt;/code&gt;  调整到应用实例（ &lt;code&gt;app&lt;/code&gt; ）上&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;2.x 全局 API（ &lt;code&gt;Vue&lt;/code&gt; ）&lt;/th&gt;
+&lt;th&gt;3.x 实例 API ( &lt;code&gt;app&lt;/code&gt; )&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Vue.config.xxxx&lt;/td&gt;
+&lt;td&gt;app.config.xxxx&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Vue.config.productionTip&lt;/td&gt;
+&lt;td&gt;&amp;lt;strong style=&amp;quot;color:#DD5145&amp;quot;&amp;gt; 移除 &amp;lt;/strong&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Vue.component&lt;/td&gt;
+&lt;td&gt;app.component&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Vue.directive&lt;/td&gt;
+&lt;td&gt;app.directive&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Vue.mixin&lt;/td&gt;
+&lt;td&gt;app.mixin&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Vue.use&lt;/td&gt;
+&lt;td&gt;app.use&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Vue.prototype&lt;/td&gt;
+&lt;td&gt;app.config.globalProperties&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2其他改变&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2其他改变&#34;&gt;#&lt;/a&gt; 2. 其他改变&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;data 选项应始终被声明为一个函数。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;过度类名的更改：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Vue2.x 写法&lt;/p&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;figcaption data-lang=&#34;CSS&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token selector&#34;&gt;.v-enter,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;.v-leave-to&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;opacity&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; 0&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token selector&#34;&gt;.v-leave,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;.v-enter-to&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;opacity&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; 1&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vue3.x 写法&lt;/p&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;figcaption data-lang=&#34;CSS&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token selector&#34;&gt;.v-enter-from,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;.v-leave-to&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;opacity&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; 0&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token selector&#34;&gt;.v-leave-from,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;.v-enter-to&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;opacity&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; 1&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;lt;strong style=&amp;quot;color:#DD5145&amp;quot;&amp;gt; 移除 &amp;lt;/strong&amp;gt;keyCode 作为 v-on 的修饰符，同时也不再支持 &lt;code&gt;config.keyCodes&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;lt;strong style=&amp;quot;color:#DD5145&amp;quot;&amp;gt; 移除 &amp;lt;/strong&amp;gt; &lt;code&gt;v-on.native&lt;/code&gt;  修饰符&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;父组件中绑定事件&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;&amp;lt;my-component
+  v-on:close=&amp;quot;handleComponentEvent&amp;quot;
+  v-on:click=&amp;quot;handleNativeClickEvent&amp;quot;
+/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;子组件中声明自定义事件&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;&amp;lt;script&amp;gt;
+  export default &amp;#123;
+    emits: [&#39;close&#39;]
+  &amp;#125;
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;lt;strong style=&amp;quot;color:#DD5145&amp;quot;&amp;gt; 移除 &amp;lt;/strong &amp;gt; 过滤器（filter）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;过滤器虽然这看起来很方便，但它需要一个自定义语法，打破大括号内表达式是 “只是 JavaScript” 的假设，这不仅有学习成本，而且有实现成本！建议用方法调用或计算属性去替换过滤器。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;......&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="IT" />
+        <category term="编程" />
+        <category term="vue" />
+        <category term="教程" />
+        <updated>2023-02-07T11:48:30.000Z</updated>
+    </entry>
+</feed>

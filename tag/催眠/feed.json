@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "帅哥 • All posts by \"催眠\" tag",
+    "description": "初入前端的菜鸟一枚",
+    "home_page_url": "https://suyu250.github.io",
+    "items": [
+        {
+            "id": "https://suyu250.github.io/2023/02/07/%E7%9D%A1%E4%B8%8D%E7%9D%80%EF%BC%9F%E6%9D%A5%E5%90%AC%E5%90%AC%E8%BF%99%E4%BA%9B%E5%AE%89%E9%9D%99%E7%9A%84%E6%AD%8C%E6%9B%B2%E5%90%A7%EF%BC%81/",
+            "url": "https://suyu250.github.io/2023/02/07/%E7%9D%A1%E4%B8%8D%E7%9D%80%EF%BC%9F%E6%9D%A5%E5%90%AC%E5%90%AC%E8%BF%99%E4%BA%9B%E5%AE%89%E9%9D%99%E7%9A%84%E6%AD%8C%E6%9B%B2%E5%90%A7%EF%BC%81/",
+            "title": "睡不着？来听听这些安静的歌曲吧！",
+            "date_published": "2023-02-07T11:12:24.000Z",
+            "content_html": "<h1 id=\"好音乐不私藏\"><a class=\"anchor\" href=\"#好音乐不私藏\">#</a> 好音乐不私藏</h1>\n<p>欢迎光临博客，走进音乐心情风筝，冲出你落寞的窗口，拍去身上的迷茫，卸下烦琐的心情，给漂泊的心一个停泊的港湾。--- 你永远的家。我是个在很多场合下喜欢把自己称为孩子，拒绝长大的孩子。在永恒的羽翼的签名档中的那句话，只有快活的，天真的，没心没肺的孩子才能飞。我是多么地喜欢这句话。现在的我处身于世界的另一个角落，在另一段时间中生活，我习惯了在天亮的时候跟很多人道再见，说晚安。现在你那里天黑了么，还是天快要亮了呢。<br />\n<mark>请永远不要忘了那个等你回家的人</mark><br />\n <div class=\"media-container\"><div class=\"player\" data-type=\"audio\" data-src='[{\"title\":\"晚安催眠曲\",\"list\":[\"https://music.163.com/#/my/m/music/playlist?id=8147144789\"]}]'></div></div></p>\n",
+            "tags": [
+                "音乐",
+                "安静的歌曲",
+                "催眠"
+            ]
+        }
+    ]
+}
