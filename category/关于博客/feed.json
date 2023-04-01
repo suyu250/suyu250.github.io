@@ -1,7 +1,7 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "帅哥 • All posts by \"关于博客\" category",
-    "description": "初入前端的菜鸟一枚",
+    "title": "夜夜大魔王 • All posts by \"关于博客\" category",
+    "description": "别怕，有光.",
     "home_page_url": "https://suyu250.github.io",
     "items": [
         {
@@ -17,9 +17,9 @@
         {
             "id": "https://suyu250.github.io/2023/02/02/%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/",
             "url": "https://suyu250.github.io/2023/02/02/%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/",
-            "title": "注意事项",
+            "title": "本博客Markdown使用语法",
             "date_published": "2023-02-02T05:44:01.000Z",
-            "content_html": "<div class=\"note danger\">\n<p>要想生活过得去，头上总得带点绿！<br />\n兄弟们如果觉得还行吧，记得打赏哦！😘</p>\n</div>\n<div class=\"note warning\">\n<p>大家如果有什么问题，或者建议什么的，统一在导航栏的留言板进行评论哦！<br />\n我看到的话，会第一时间回复你的哦！😘😘</p>\n</div>\n<h1 id=\"注意\"><a class=\"anchor\" href=\"#注意\">#</a> 注意</h1>\n<ol>\n<li>大家评论的时候，记得填写正确的邮箱哦，这样有人回复你的话，邮件里才会有提示的哦！</li>\n<li>本网站目前是托管在 github 上，所以访问速度可能有点慢，可以挂梯子访问！</li>\n<li>评论区支持 markdown 语法</li>\n<li><mark>暂时没想到</mark></li>\n</ol>\n<figure class=\"highlight js\"><figcaption data-lang=\"JavaScript\"><span>s</span></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token function\">alert</span><span class=\"token punctuation\">(</span><span class=\"token string\">\"点赞\"</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span></pre></td></tr><tr><td data-num=\"2\"></td><td><pre>  <span class=\"token function\">alert</span><span class=\"token punctuation\">(</span><span class=\"token string\">\"评论\"</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span></pre></td></tr><tr><td data-num=\"3\"></td><td><pre>  <span class=\"token function\">alert</span><span class=\"token punctuation\">(</span><span class=\"token string\">\"转发\"</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span></pre></td></tr></table></figure>",
+            "content_html": "<div class=\"note danger\">\n<p>要想生活过得去，头上总得带点绿！<br />\n兄弟们如果觉得还行吧，记得打赏哦！😘</p>\n</div>\n<div class=\"note warning\">\n<p>大家如果有什么问题，或者建议什么的，统一在导航栏的留言板进行评论哦！<br />\n我看到的话，会第一时间回复你的哦！😘😘</p>\n</div>\n<h1 id=\"用法\"><a class=\"anchor\" href=\"#用法\">#</a> 用法</h1>\n<ol>\n<li>本博客的 Markdown 语法：<span class=\"exturl\" data-url=\"aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9zcGVjaWFsLw==\">传送链接</span></li>\n</ol>\n<figure class=\"highlight js\"><figcaption data-lang=\"JavaScript\"><span>s</span></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token function\">alert</span><span class=\"token punctuation\">(</span><span class=\"token string\">\"点赞\"</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span></pre></td></tr><tr><td data-num=\"2\"></td><td><pre>  <span class=\"token function\">alert</span><span class=\"token punctuation\">(</span><span class=\"token string\">\"评论\"</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span></pre></td></tr><tr><td data-num=\"3\"></td><td><pre>  <span class=\"token function\">alert</span><span class=\"token punctuation\">(</span><span class=\"token string\">\"转发\"</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span></pre></td></tr></table></figure>",
             "tags": [
                 "我的博客"
             ]

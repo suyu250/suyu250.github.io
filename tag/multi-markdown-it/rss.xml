@@ -1,34 +1,18 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>帅哥 • Posts by &#34;multi-markdown-it&#34; tag</title>
+        <title>夜夜大魔王 • Posts by &#34;multi-markdown-it&#34; tag</title>
         <link>https://suyu250.github.io</link>
-        <description>初入前端的菜鸟一枚</description>
+        <description>别怕，有光.</description>
         <language>zh-CN</language>
-        <pubDate>Sun, 05 Feb 2023 12:15:00 +0800</pubDate>
-        <lastBuildDate>Sun, 05 Feb 2023 12:15:00 +0800</lastBuildDate>
-        <category>hexo入门指南</category>
+        <pubDate>Sun, 05 Feb 2023 11:37:22 +0800</pubDate>
+        <lastBuildDate>Sun, 05 Feb 2023 11:37:22 +0800</lastBuildDate>
         <category>日记</category>
-        <category>hexo中的Markdown语法</category>
         <category>我的博客</category>
         <category>IT</category>
-        <category>hexo的基本使用</category>
         <category>multi-markdown-it</category>
         <category>life</category>
         <category>线报</category>
-        <category>本主题中的Markdown语法</category>
-        <item>
-            <guid isPermalink="true">https://suyu250.github.io/2023/02/05/%E6%9C%AC%E4%B8%BB%E9%A2%98md%E8%AF%AD%E7%9A%84%E7%89%B9%E6%AE%8A%E5%8A%9F%E8%83%BD/</guid>
-            <title>本主题md语的特殊功能</title>
-            <link>https://suyu250.github.io/2023/02/05/%E6%9C%AC%E4%B8%BB%E9%A2%98md%E8%AF%AD%E7%9A%84%E7%89%B9%E6%AE%8A%E5%8A%9F%E8%83%BD/</link>
-            <category>multi-markdown-it</category>
-            <category>本主题中的Markdown语法</category>
-            <pubDate>Sun, 05 Feb 2023 12:15:00 +0800</pubDate>
-            <description><![CDATA[ &lt;ul&gt;
-&lt;li&gt;待更新。。。 我是大帅哥&lt;/li&gt;
-&lt;/ul&gt;
- ]]></description>
-        </item>
         <item>
             <guid isPermalink="true">https://suyu250.github.io/2023/02/05/multi-markdown-it%E4%B8%AD%E8%A1%A8%E6%83%85%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
             <title>multi-markdown-it中表情的使用</title>
